@@ -1,18 +1,28 @@
-# .
+# Bizshare VueJs Frontend Test
 
-This template should help get you started developing with Vue 3 in Vite.
+Tech Stack Used:
+- Vue3
+- Axios
+- vue-feather & feather-icons
+
+Nothing much about the stacks i choose. Its default stack by Vite.
+Choosing vue-feather for easy icons setup, so i can focus on other things.
+Using Axios for data fetching, one of the best data fetching library in community.
 
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+## Clone Repository
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+```sh
+git clone https://github.com/ilhamabdulm/bizshare-vue-test.git
+```
 
 ## Project Setup
 
 ```sh
+cd bizshare-vue-test
 npm install
 ```
 
