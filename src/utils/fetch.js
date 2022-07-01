@@ -5,7 +5,6 @@ const instance = axios.create({
   headers: {
     'Accept-Language': 'id',
     'Content-Type': 'application/json',
-    'Content-Security-Policy': 'upgrade-insecure-requests',
   },
 });
 
