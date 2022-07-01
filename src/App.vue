@@ -87,6 +87,7 @@ onMounted(() => {
 
 watch(searchValue, async (newVal, oldVal) => {
   if (newVal.length >= 3 || !newVal.length) {
+    currentPage.value = 1;
     _getListingList();
   }
 });
