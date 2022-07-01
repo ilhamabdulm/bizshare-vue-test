@@ -34,4 +34,14 @@ const emit = defineEmits(['onNext', 'onPrev']);
 .pagination-container > p {
   font-size: 1.4rem;
 }
+
+@media only screen and (max-width: 640px) {
+  .pagination-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
 </style>

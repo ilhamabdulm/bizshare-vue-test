@@ -32,7 +32,7 @@ const _getListingList = async () => {
       totalPages: response.data.totalPages,
       totalData: response.data.totalElements,
     };
-    state.listings = response.data.content
+    state.listings = response.data.content;
   } catch (err) {
     console.log(err);
   }
@@ -168,5 +168,25 @@ watch(currentPage, async (newVal, oldVal) => {
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
   margin: 2rem 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .listing-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .listing-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 </style>

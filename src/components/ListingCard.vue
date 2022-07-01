@@ -17,7 +17,8 @@ const props = defineProps({ item: Object });
 <style scoped>
 .product-card {
   border: 1px solid #ddd;
-  height: 30rem;
+  /* height: 30rem; */
+  height: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,9 @@ const props = defineProps({ item: Object });
   -webkit-box-shadow: 1px 4px 10px -3px rgba(204, 204, 204, 0.75);
   -moz-box-shadow: 1px 4px 10px -3px rgba(204, 204, 204, 0.75);
 }
-
+.product-card__item {
+  margin-bottom: 2.4rem;
+}
 .product-card__item > h4 {
   font-size: 1.8rem;
   font-weight: 600;
