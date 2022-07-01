@@ -1,5 +1,17 @@
 <script setup>
-const props = defineProps({ placeholder: String });
+import { ref } from '@vue/reactivity';
+
+const props = defineProps({
+  placeholder: String,
+  searchValue: String,
+  modelValue: String,
+});
+
+const emit = defineEmits(['update:modelValue']);
+
+const updateValue = (event) => {
+  emit('update:modelValue', event.target.value);
+};
 </script>
 
 <template>
@@ -9,6 +21,8 @@ const props = defineProps({ placeholder: String });
       class="search-input"
       type="search"
       :placeholder="props.placeholder"
+      :value="props.modelValue"
+      @input="updateValue"
     />
   </label>
 </template>

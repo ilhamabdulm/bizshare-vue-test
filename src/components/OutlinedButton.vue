@@ -3,10 +3,11 @@ const props = defineProps({
   icon: String,
   text: String,
 });
+const emit = defineEmits(['action']);
 </script>
 
 <template>
-  <button class="outlined-btn">
+  <button class="outlined-btn" @click="emit('action')">
     <vue-feather v-if="props.icon" :type="props.icon" size="18"></vue-feather
     >{{ props.text }}
   </button>
