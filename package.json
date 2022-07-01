@@ -7,7 +7,10 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "axios": "^0.27.2",
+    "feather-icons": "^4.29.0",
+    "vue": "^3.2.37",
+    "vue-feather": "^2.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
